@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wrench, Heart, Camera } from "lucide-react";
+import { Wrench, Heart, Camera, Mail } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-foreground text-background py-12 mt-20">
@@ -32,8 +32,14 @@ const Footer = () => (
           </div>
         </div>
         <div>
-          <h4 className="font-display font-bold mb-4">Get Involved</h4>
-          <p className="text-sm text-background/60 leading-relaxed">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+              <Mail className="w-4 h-4 text-primary-foreground" />
+            </div>
+            <span className="font-display font-bold text-lg">Email: adaptivetechclub.lwhs@gmail.com</span>
+          </div>
+          <h4 className="font-display font-bold mb-2">Get Involved</h4>
+          <p className="text-sm text-background/60 leading-relaxed mb-4">
             Want to join, donate, or request an adapted device? Reach out through our <Link to="/Contact" className="text-sm text-primary/60 hover:text-primary transition-colors hover:underline">contact page</Link> or <Link to="/request" className="text-sm text-primary/60 hover:text-primary transition-colors hover:underline">request a device</Link>!
           </p>
         </div>
